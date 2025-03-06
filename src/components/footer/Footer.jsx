@@ -1,65 +1,51 @@
 import React from "react";
 import loga from "../../assets/loga.png";
+
 const Footer = () => {
   return (
-    <>
-      <footer className="bg-white rounded shadow-sm dark:bg-pink-700 m-0">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="/"
-              className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-            >
-              <img src={loga} className="h-12 w-12" alt="Flowbite Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Sahajyoga Jalgaon
-              </span>
-            </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-cyan-600 sm:mb-0 dark:text-gray-400">
-              <li>
-                <a
-                  href="/shree-mataji"
-                  className="hover:underline  text-white text-xl font-serif font-bold me-4 md:me-6"
-                >
-                  Shri Mataji
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/sahaja-yoga"
-                  className="hover:underline text-white text-xl font-serif font-bold me-4 md:me-6"
-                >
-                  Sahajayoga
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/centers"
-                  className="hover:underline text-white text-xl font-serif font-bold me-4 md:me-6"
-                >
-                  Centers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="download/"
-                  className="hover:underline text-white font-serif font-bold  text-xl"
-                >
-                  Download
-                </a>
-              </li>
-            </ul>
-          </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span className="block text-sm text-cyan-300-500 sm:text-center dark:text-cyan-300">
-            © 2025{" "}
-            <span className="text-cyan-300 text-sm">
-              Designed Developed by Sahajayoga Jalgaon Digital Team
+    <footer className="bg-pink-700 w-full">
+      <div className="max-w-screen-xl mx-auto p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          {/* Logo & Title */}
+          <a href="/" className="flex items-center mb-4 sm:mb-0 space-x-3">
+            <img src={loga} className="h-12 w-12" alt="Sahajayoga Logo" />
+            <span className="text-2xl font-semibold text-white">
+              Sahajayoga Jalgaon
             </span>
-          </span>
+          </a>
+
+          {/* Navigation Links */}
+          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium">
+            {[
+              { name: "Shri Mataji", link: "/shree-mataji" },
+              { name: "Sahajayoga", link: "/sahaja-yoga" },
+              { name: "Centers", link: "/centers" },
+              { name: "Download", link: "/download" },
+            ].map((item, index) => (
+              <li key={index} className="w-full text-center sm:w-auto">
+                <a
+                  href={item.link}
+                  className="hover:underline text-white text-lg font-serif font-bold block sm:inline me-4 md:me-6"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-      </footer>
-    </>
+
+        {/* Divider */}
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+
+        {/* Footer Text */}
+        <span className="block text-sm text-white text-center">
+          © 2025{" "}
+          <span className="text-white text-sm">
+            Designed & Developed by Sahajayoga Jalgaon Digital Team
+          </span>
+        </span>
+      </div>
+    </footer>
   );
 };
 

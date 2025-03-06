@@ -13,18 +13,24 @@ import Subtle from "./Pages/sahajayoga/Subtle";
 function App() {
   return (
     <>
+      {/* Navbar (Fixed) */}
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shree-mataji" element={<ShreeMataji />} />
-        <Route path="/sahaja-yoga" element={<Sahajayoga />} />
-        <Route path="/centers" element={<Center />} />
-        <Route path="/Events" element={<Events />} />
-        <Route path="/download" element={<Download />} />
-        <Route path="/memories" element={<Memories />} />
-        <Route path="/subtle" element={<Subtle />} />
-      </Routes>
+      {/* Main Content (Pushes Below Navbar) */}
+      <div className="pt-20 bg-gray-100">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shree-mataji" element={<ShreeMataji />} />
+          <Route path="/sahaja-yoga" element={<Sahajayoga />} />
+          <Route path="/centers" element={<Center />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/download" element={<Download />} />
+          <Route path="/memories" element={<Memories />} />
+          <Route path="/subtle" element={<Subtle />} />
+        </Routes>
+      </div>
+
+      {/* Footer */}
       <Footer />
     </>
   );

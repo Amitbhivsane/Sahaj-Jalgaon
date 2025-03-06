@@ -9,7 +9,7 @@ const accordionData = [
   },
   {
     id: 2,
-    Puja: " Shree Birth Day 2025",
+    Puja: " Shree BirthDay Puja 2025",
     day: "Friday",
     date: "21-03-2025",
     place: "Tarsod Ashram Jalgaon",
