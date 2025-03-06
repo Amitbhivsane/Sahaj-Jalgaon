@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import accordionData from "../../data/datapuja";
 import a from "../../assets/a.jpg";
 
@@ -9,29 +8,28 @@ const Events = () => {
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
   return (
     <>
-      <div className="bg-gray-100">
+      <div className="flex flex-col items-center min-h-screen p-0 bg-pink-50 ">
         {/* Header Image */}
-        <img className="h-auto w-full" src={a} alt="Shri Mataji" />
+        <img className="w-full h-auto object-cover" src={a} alt="Shri Mataji" />
 
         {/* Title Section */}
-        <div className="flex flex-col items-center text-center py-6">
+        <div className="flex flex-col items-center text-center py-8 px-6 ">
           <h1 className="text-3xl font-semibold font-serif text-pink-700 uppercase">
-            H.H. Shri Mataji Nirmala Devi Pooja Calander 2025 Tarsod Jalgaon
+            H.H. Shri Mataji Nirmala Devi Pooja Calendar 2025 Tarsod Jalgaon
           </h1>
         </div>
 
-        <div
-          className="w-full max-w-4xl mx-auto bg-gray-700"
-          id="accordion-collapse "
-        >
+        {/* Accordion Section */}
+        <div className="w-full max-w-4xl mx-auto mb-5">
           {accordionData.map((item, index) => (
-            <div className="bg-gray-100" key={index}>
+            <div className="bg-red-50" key={index}>
               <h2 id={`accordion-heading-${index}`}>
                 <button
                   type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium font-serif text-gray-100 border border-gray-100 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-100 dark:border-gray-200 dark:text-gray-900 hover:bg-gray-100 dark:hover:bg-cyan-200 gap-3"
+                  className="flex items-center justify-between w-full p-5 font-medium font-serif text-gray-100 border border-gray-100 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-100 dark:border-gray-200 dark:text-gray-900 hover:bg-gray-100 dark:hover:bg-red-100 gap-3"
                   onClick={() => toggleAccordion(index)}
                   aria-expanded={openIndex === index}
                   aria-controls={`accordion-body-${index}`}
@@ -69,19 +67,19 @@ const Events = () => {
                 aria-labelledby={`accordion-heading-${index}`}
               >
                 <p className="mb-2 font-serif text-gray-500 dark:text-pink-700">
-                  Date:- {""} {item.date}
+                  Date: {item.date}
                 </p>
                 <p className="mb-2 font-serif text-gray-500 dark:text-cyan-600">
-                  Day:- {""} {item.day}
+                  Day: {item.day}
                 </p>
                 <p className="mb-2 font-serif text-gray-500 dark:text-pink-700">
-                  Time:- 11 AM
+                  Time: 11 AM
                 </p>
                 <p className="mb-2 font-serif text-gray-500 dark:text-cyan-600">
-                  Place:- {item.place}
+                  Place: {item.place}
                 </p>
                 <p className="mb-2 font-serif text-gray-500 dark:text-pink-700">
-                  Collectivity:- {item.Taluka}
+                  Collectivity: {item.Taluka}
                 </p>
               </div>
             </div>

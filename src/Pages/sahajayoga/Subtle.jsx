@@ -287,8 +287,7 @@ const Subtle = () => {
               existence.
             </p>
           </div>
-
-          <div className="w-full md:w-1/2 bg-gray-100 p-8 flex  ">
+          <div className="w-full md:w-1/2 bg-gray-100 p-8 flex justify-center items-center ">
             <div className="flex flex-col items-center space-y-6 p-4 ">
               {/* Image Section */}
               <img

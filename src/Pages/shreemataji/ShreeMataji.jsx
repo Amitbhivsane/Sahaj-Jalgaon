@@ -5,25 +5,23 @@ import shrimataji_young from "../../assets/shrimataji_young.jpg";
 
 const ShreeMataji = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen p-0 bg-gray-100">
+    <div className="flex flex-col items-center min-h-screen bg-red-50">
       {/* Header Image */}
-      <img
-        className=" w-full object-cover max-h-[800px]"
-        src={a}
-        alt="Shri Mataji Banner"
-      />
+      <div className="w-full">
+        <img className="h-auto w-full" src={a} alt="Shri Mataji" />
+      </div>
 
       {/* Title Section */}
-      <div className="flex flex-col items-center text-center py-6 px-4">
+      <div className="text-center py-8 px-6">
         <h1 className="text-3xl sm:text-5xl font-semibold font-serif text-pink-700 uppercase">
           H.H. Shri Mataji Nirmala Devi
         </h1>
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6 w-full max-w-5xl">
         {/* Left Section - Biography */}
-        <div className="w-full md:w-1/2 bg-gray-100 p-6 md:p-8">
+        <div className="w-full md:w-1/2 p-4 md:p-6 bg-red-50">
           <h2 className="text-3xl font-semibold font-serif text-pink-700">
             Birth and Childhood
           </h2>
@@ -67,7 +65,7 @@ const ShreeMataji = () => {
             <Link to="https://shrimataji.org/">
               <button
                 className="px-5 py-2 text-gray-800 border border-gray-600 rounded-lg font-medium 
-                                 hover:bg-cyan-600 hover:text-white transition duration-300"
+                           hover:bg-cyan-600 hover:text-white transition duration-300 focus:ring-2 focus:ring-cyan-400"
               >
                 Read More
               </button>
@@ -76,11 +74,11 @@ const ShreeMataji = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className="w-full md:w-1/2 bg-gray-100 p-6 md:p-8 flex flex-col items-center">
+        <div className="w-full md:w-1/2 flex justify-center items-center p-4 md:p-6">
           <img
             src={shrimataji_young}
             alt="Shri Mataji Young"
-            className="w-full max-w-lg rounded-lg shadow-lg object-cover"
+            className="w-full md:w-4/5 lg:w-auto lg:h-auto rounded-lg shadow-lg object-cover"
           />
         </div>
       </div>

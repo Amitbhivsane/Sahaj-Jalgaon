@@ -3,7 +3,7 @@ import Hero from "../components/hero/Hero";
 
 const Home = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-red-50 w-full h-auto">
       <Hero />
 
       <section className="container mx-auto text-center px-6 py-12">

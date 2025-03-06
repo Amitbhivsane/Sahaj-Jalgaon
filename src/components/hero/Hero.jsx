@@ -37,13 +37,13 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full max-w-screen-xl mx-auto bg-gray-100">
-        <div className="relative h-56 md:h-[550px] overflow-hidden rounded-lg">
+      <div className="relative w-full max-w-screen-xl mx-auto bg-red-50">
+        <div className="relative h-56 md:h-[550px] overflow-hidden rounded-l-md">
           {images.map((image, index) => (
             <img
               key={index}
               src={image}
-              className={`absolute block w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+              className={`absolute block w-full h-full  transition-opacity duration-700 ease-in-out  ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
               alt={`Slide ${index + 1}`}

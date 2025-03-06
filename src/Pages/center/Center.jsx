@@ -21,8 +21,8 @@ const Center = () => {
   );
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 bg-gray-100">
-      <div className="bg-gray-200 w-full max-w-3xl mx-auto shadow-lg m-4 p-6 rounded-lg min-h-64">
+    <div className="flex flex-col items-center min-h-screen p-4 bg-red-50">
+      <div className="bg-gray-200 w-full max-w-3xl mx-auto shadow-2xl m-4 p-6 rounded-lg min-h-64 bg-gradient-to-r from-red-100 to-red-200">
         <h2 className="font-serif font-bold text-xl sm:text-2xl text-pink-700 pl-4 sm:pl-6">
           Jalgaon District Meditation Centers
         </h2>
@@ -40,7 +40,7 @@ const Center = () => {
       </div>
 
       {/* Dropdown Filters */}
-      <div className="flex gap-4 mb-6">
+      <div className="flex gap-4 mb-6 ">
         <select
           className="p-2 border rounded shadow-sm bg-white font-serif text-gray-700"
           value={selectedTaluka}
@@ -69,7 +69,7 @@ const Center = () => {
       </div>
 
       {/* Centers List */}
-      <div className="w-full max-w-5xl mx-auto flex flex-wrap gap-4 p-4">
+      <div className="w-full max-w-5xl mx-auto flex flex-wrap gap-4 p-4 bg-red-200">
         {filteredData.length > 0 ? (
           filteredData.map((item) => (
             <div
@@ -100,7 +100,7 @@ const Center = () => {
                 <span>{item.attendence}</span>
               </p>
 
-              <div className="mt-2 p-3 bg-gray-50 rounded">
+              <div className="mt-2 p-3 bg-pink-200 rounded">
                 <div className="p-4 bg-white shadow-md rounded-lg w-full overflow-hidden">
                   <p className="font-serif text-red-700 text-sm flex items-center gap-2">
                     <IoMdPerson size={20} /> {item.coordinate1}

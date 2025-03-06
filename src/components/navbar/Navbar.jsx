@@ -15,12 +15,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white fixed  h-20 left-0 w-full z-50 shadow-md border-gray-200 dark:bg-pink-700">
+    <nav className="bg-pink-700 fixed h-20 left-0 w-full z-50 shadow-md border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
           <img src={loga} className="h-10 w-10" alt="Sahaja Yoga Logo" />
-          <span className="text-2xl font-semibold font-serif dark:text-white">
+          <span className="text-2xl font-semibold font-serif text-white">
             SahajaYoga Jalgaon
           </span>
         </Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           type="button"
-          className="md:hidden text-white bg-pink-700 p-2 rounded-lg hover:bg-pink-200 focus:ring-2 focus:ring-pink-400"
+          className="md:hidden text-white bg-pink-700 p-2 rounded-lg hover:bg-pink-600 focus:ring-2 focus:ring-pink-400"
           aria-controls="navbar-default"
           aria-expanded={isOpen}
         >
@@ -59,20 +59,25 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div
-          className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
+          className={`${
+            isOpen ? "block bg-pink-700" : "hidden"
+          } w-full md:block md:w-auto`}
           id="navbar-default"
         >
           <ul
-            className="font-serif flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 
-                         md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-pink-700 md:dark:bg-pink-700 uppercase"
+            className={`font-serif flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg 
+                        md:flex-row md:space-x-8 md:mt-0 md:border-0 uppercase 
+                        md:bg-transparent ${
+                          isOpen ? "bg-pink-700" : "bg-pink-700"
+                        }`}
           >
             {navLinks.map((item) => (
               <li key={item.name}>
                 <Link
                   to={item.link}
                   onClick={() => setIsOpen(false)}
-                  className="block py-2 px-3 rounded-sm md:p-0 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent 
-                             md:hover:text-blue-700 dark:text-white md:dark:hover:text-cyan-500 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block py-2 px-3 rounded-sm md:p-0 text-white hover:bg-pink-600 
+                             md:hover:bg-transparent md:hover:text-gray-300"
                 >
                   {item.name}
                 </Link>
