@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import a from "../../assets/a.jpg";
-import b from "../../assets/a.jpg";
+import shrimatajia from "../../assets/mataji/shrimatajia.png";
+import shrimatajib from "../../assets/mataji/shrimatajib.png";
+import shrimatajic from "../../assets/mataji/shrimatajic.png";
+import shrimatajid from "../../assets/mataji/shrimatajid.png";
+import tarsod from "../../assets/mataji/tarsod.png";
+import tarsod1 from "../../assets/mataji/tarsod1.png";
 
-const images = [a, b];
+const images = [tarsod1, shrimatajia, shrimatajib, shrimatajic, tarsod];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,22 +34,22 @@ const Hero = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [isManual]);
+  }, [isManual, currentIndex]);
 
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full max-w-screen-xl mx-auto bg-red-50">
-        <div className="relative h-56 md:h-[550px] overflow-hidden rounded-l-md">
+      <div className="relative w-full  mx-auto bg-red-50">
+        <div className="relative  h-56 md:h-[550px] overflow-hidden rounded-l-md">
           {images.map((image, index) => (
             <img
               key={index}
               src={image}
               className={`absolute block w-full h-full  transition-opacity duration-700 ease-in-out  ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
+                index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               alt={`Slide ${index + 1}`}
             />

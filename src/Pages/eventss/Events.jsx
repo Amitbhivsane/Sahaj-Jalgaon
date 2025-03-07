@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import accordionData from "../../data/datapuja";
-import a from "../../assets/a.jpg";
+import matajio from "../../assets/mataji/matajio.png";
 
 const Events = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -13,7 +13,11 @@ const Events = () => {
     <>
       <div className="flex flex-col items-center min-h-screen p-0 bg-pink-50 ">
         {/* Header Image */}
-        <img className="w-full h-auto object-cover" src={a} alt="Shri Mataji" />
+        <img
+          className="w-full h-auto object-cover"
+          src={matajio}
+          alt="Shri Mataji"
+        />
 
         {/* Title Section */}
         <div className="flex flex-col items-center text-center py-8 px-6 ">

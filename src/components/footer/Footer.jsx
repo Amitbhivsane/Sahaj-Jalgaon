@@ -41,7 +41,7 @@ const Footer = () => {
         <span className="block text-sm text-white text-center">
           © 2025{" "}
           <span className="text-white text-sm">
-            Designed & Developed by Sahajayoga Jalgaon Digital Team
+            Designed & Developed by Divine Love
           </span>
         </span>
       </div>

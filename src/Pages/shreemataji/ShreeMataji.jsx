@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import a from "../../assets/a.jpg";
 import shrimataji_young from "../../assets/shrimataji_young.jpg";
+import shrimatajic from "../../assets/mataji/shrimatajic.png";
 
 const ShreeMataji = () => {
   return (
     <div className="flex flex-col items-center min-h-screen bg-red-50">
       {/* Header Image */}
       <div className="w-full">
-        <img className="h-auto w-full" src={a} alt="Shri Mataji" />
+        <img className="h-auto w-full" src={shrimatajic} alt="Shri Mataji" />
       </div>
 
       {/* Title Section */}

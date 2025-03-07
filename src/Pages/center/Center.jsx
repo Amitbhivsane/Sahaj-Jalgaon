@@ -5,6 +5,9 @@ import { FaMobileScreen } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { IoTimeOutline } from "react-icons/io5";
+import shrimatajif from "../../assets/mataji/shrimatajif.png";
+import matajio from "../../assets/mataji/matajio.png";
+import tarsod2 from "../../assets/mataji/tarsod2.png";
 
 // Dynamically generate unique taluka and day options
 const talukaOptions = [...new Set(accordionData.map((item) => item.taluka))];
@@ -21,8 +24,9 @@ const Center = () => {
   );
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 bg-red-50">
-      <div className="bg-gray-200 w-full max-w-3xl mx-auto shadow-2xl m-4 p-6 rounded-lg min-h-64 bg-gradient-to-r from-red-100 to-red-200">
+    <div className="flex flex-col items-center min-h-screen bg-red-50">
+      <img className="w-full h-auto " src={shrimatajif} alt="Shri Mataji" />
+      <div className=" w-full max-w-3xl mx-auto shadow-2xl m-4 p-6 rounded-lg min-h-64 bg-gradient-to-r from-red-100 to-red-200 bg-red-50">
         <h2 className="font-serif font-bold text-xl sm:text-2xl text-pink-700 pl-4 sm:pl-6">
           Jalgaon District Meditation Centers
         </h2>
@@ -32,7 +36,8 @@ const Center = () => {
           meditation centers.
         </p>
         <p className="font-serif font-bold text-lg sm:text-xl text-cyan-600 pl-4 sm:pl-6">
-          <strong>Toll Free No:</strong> 1800 2 700 800
+          <strong className="text-pink-700">Toll Free No:</strong>{" "}
+          <span className="text-cyan-700 text-3xl">1800 2 700 800</span>
         </p>
         <p className="font-serif font-bold text-lg sm:text-xl text-cyan-600 pl-4 sm:pl-6">
           Sahajayoga Meditation is always free. All are welcome.

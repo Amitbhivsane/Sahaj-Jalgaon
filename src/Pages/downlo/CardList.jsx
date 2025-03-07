@@ -1,25 +1,33 @@
 import React from "react";
+import Hindi from "../../assets/book/Hindi.png";
+import marathi from "../../assets/book/marathi.png";
+import med from "../../assets/book/med.png";
+import subtel from "../../assets/book/subtel.png";
 
 const cardData = [
   {
     id: 1,
-    image: "https://via.placeholder.com/150",
-    title: "Sahajyoga Introduction",
+    image: med,
+    title: "Steps for Getting Self Realization (M,H,E)",
+    downloadLink: "/pdfs/med-book.pdf",
   },
   {
     id: 2,
-    image: "https://via.placeholder.com/150",
-    title: "The Subtle System",
+    image: marathi,
+    title: "Sahajayoga Introduction Marathi",
+    downloadLink: "/pdfs/sahajyoga-marathi.pdf", // Add the correct PDF path
   },
   {
     id: 3,
-    image: "https://via.placeholder.com/150",
-    title: "Meditation Method",
+    image: subtel,
+    title: "Sahajayoga Subtle System Hindi",
+    downloadLink: "/pdfs/subtle-system-hindi.pdf",
   },
   {
     id: 4,
-    image: "https://via.placeholder.com/150",
-    title: "Meditation Method",
+    image: Hindi,
+    title: "Sahajayoga Introduction Hindi",
+    downloadLink: "/pdfs/sahajyoga-new-hindi.pdf",
   },
 ];
 
@@ -34,24 +42,25 @@ const CardList = () => {
       {cardData.map((card) => (
         <div
           key={card.id}
-          className="w-60 bg-white border border-gray-200 rounded-lg shadow-sm"
+          className="w-60 bg-red-300  border-gray-300 rounded-lg shadow-sm "
         >
           {/* 📌 Image */}
           <img
-            className="w-full h-64 object-cover  font-serif rounded-t-lg"
+            className="w-full h-65 object-cover font-serif rounded-t-lg"
             src={card.image}
             alt={card.title}
           />
 
           {/* 📌 Card Content */}
           <div className="p-5 bg-red-300 rounded-b-lg">
-            <h5 className="text-center text-lg font-serif  text-cyan-700">
+            <h5 className="text-center text-lg font-serif text-cyan-700">
               {card.title}
             </h5>
 
             {/* 📌 Download Button */}
             <a
-              href="#"
+              href={card.downloadLink} // Dynamic download link
+              download // Ensures the file is downloaded instead of opened
               className="mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-white bg-cyan-700 rounded-lg hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
             >
               Download

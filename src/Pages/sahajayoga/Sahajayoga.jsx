@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import a from "../../assets/a.jpg";
 import awarenss from "../../assets/awarenss.jpg";
+import shrimatajie from "../../assets/mataji/shrimatajie.png";
 
 const Sahajayoga = () => {
   return (
@@ -10,7 +11,7 @@ const Sahajayoga = () => {
         {/* Full-width Image */}
         <img
           className="w-full h-auto object-cover"
-          src={a}
+          src={shrimatajie}
           alt="Sahaja Yoga"
           loading="lazy"
         />

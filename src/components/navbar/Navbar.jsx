@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "Shree Mataji", link: "/shree-mataji" },
     { name: "Sahaja Yoga", link: "/sahaja-yoga" },
     { name: "Centers", link: "/centers" },
-    { name: "Pooja", link: "/events" },
+    { name: "Events", link: "/events" },
     { name: "Download", link: "/download" },
     { name: "Memories", link: "/memories" },
   ];
