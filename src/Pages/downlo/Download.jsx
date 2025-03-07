@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import a from "../../assets/a.jpg";
-import b from "../../assets/a.jpg";
+// import a from "../../assets/a.jpg";
+// import b from "../../assets/a.jpg";
 import CardList from "./CardList";
-import ShriMatajig from "../../assets/mataji/ShriMatajig.jpg";
+// import ShriMatajig from "../../assets/mataji/ShriMatajig.jpg";
 import shreeem from "../../assets/mataji/shreeem.png";
 
-const images = [a, b];
+// const images = [a, b];
 
 const Download = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

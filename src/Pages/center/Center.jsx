@@ -4,10 +4,10 @@ import { IoMdPerson } from "react-icons/io";
 import { FaMobileScreen } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BsFillPeopleFill } from "react-icons/bs";
-import { IoTimeOutline } from "react-icons/io5";
+// import { IoTimeOutline } from "react-icons/io5";
 import shrimatajif from "../../assets/mataji/shrimatajif.png";
-import matajio from "../../assets/mataji/matajio.png";
-import tarsod2 from "../../assets/mataji/tarsod2.png";
+// import matajio from "../../assets/mataji/matajio.png";
+// import tarsod2 from "../../assets/mataji/tarsod2.png";
 
 // Dynamically generate unique taluka and day options
 const talukaOptions = [...new Set(accordionData.map((item) => item.taluka))];
