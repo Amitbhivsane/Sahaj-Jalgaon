@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import a from "../../assets/a.jpg";
+// import a from "../../assets/a.jpg";
 import shrimataji_young from "../../assets/shrimataji_young.jpg";
 import shriMataj from "../../assets/mataji/shriMataj.png";
 
