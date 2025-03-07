@@ -6,8 +6,9 @@ import shrimatajic from "../../assets/mataji/shrimatajic.png";
 import shrimatajid from "../../assets/mataji/shrimatajid.png";
 import tarsod from "../../assets/mataji/tarsod.png";
 import tarsod1 from "../../assets/mataji/tarsod1.png";
+import tarsod3 from "../../assets/mataji/tarsod3.png";
 
-const images = [tarsod1, shrimatajia, shrimatajib, shrimatajic, tarsod];
+const images = [tarsod1, shrimatajia, shrimatajib, shrimatajic, tarsod3];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
