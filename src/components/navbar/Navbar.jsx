@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import loga from "../../assets/loga.png";
+// import LanguageOptions from "../langdropdown/LanguageOptions";
+// import { useTranslation } from "react-i18next";
+// import i18next from "i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  // const { t } = useTranslation();
+  // const handelClick = (e) => {
+  //   i18next.changeLanguage(e.target.value);
+  // };
   const navLinks = [
     { name: "Shree Mataji", link: "/shree-mataji" },
     { name: "Sahaja Yoga", link: "/sahaja-yoga" },
@@ -83,6 +89,10 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            {/* Language Dropdown Added Below "Memories" */}
+            {/* <li className="mt-2 md:mt-0 text-white ">
+              <LanguageOptions onChange={(e) => handelClick(e)} />
+            </li> */}
           </ul>
         </div>
       </div>

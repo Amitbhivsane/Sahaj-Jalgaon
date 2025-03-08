@@ -5,10 +5,13 @@ import shrimatajia from "../../assets/mataji/shrimatajia.png";
 import shreemaa from "../../assets/mataji/shreemaa.png";
 import maa from "../../assets/mataji/maa.png";
 import tarsod3 from "../../assets/mataji/tarsod3.png";
+import { useTranslation } from "react-i18next";
 
 const images = [tarsod1, shrimatajia, shreemaa, maa, tarsod3];
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isManual, setIsManual] = useState(false); // Stops auto-slide when clicked
 
@@ -110,18 +113,15 @@ const Hero = () => {
       <section className="bg-gray-700-700 py-8 px-4 text-center">
         <div className="mx-auto max-w-screen-xl">
           <h1 className="mb-4 text-4xl font-semibold font-serif text-pink-700 tracking-tight md:text-5xl lg:text-6xl">
-            New Awareness
+            {t("New Awareness")}
           </h1>
           <p className="text-xl  md:text-2xl text-gray-800 font-serif leading-relaxed max-w-3xl mx-auto p-4 md:p-6">
-            " When you get your self-realization or your second birth, you
-            become entitled to an awareness by which you can find out the roots
-            of everything. You can find out the roots of why people get sick,
-            why there are incurable diseases, why there are psychological
-            problems, why there are moral crises, why there are political
-            problems, why there are economic problems. "
+            {t(
+              "When you get your self-realization or your second birth, you become entitled to an awareness by which you can find out the roots of everything. You can find out the roots of why people get sick, why there are incurable diseases, why there are psychological problems, why there are moral crises, why there are political problems, why there are economic problems."
+            )}
           </p>
           <p className="text-cyan-700 text-xl font-semibold font-serif block mt-4">
-            1987 – October 12 Public Program, Vienna, Austria
+            {t("1987 – October 12 Public Program, Vienna, Austria")}
           </p>
         </div>
       </section>

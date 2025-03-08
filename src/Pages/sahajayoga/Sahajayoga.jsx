@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 // import a from "../../assets/a.jpg";
 import awarenss from "../../assets/awarenss.jpg";
 import shrimatajie from "../../assets/mataji/shrimatajie.png";
+import { useTranslation } from "react-i18next";
 
 const Sahajayoga = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="flex flex-col items-center min-h-screen p-0 bg-red-50">
@@ -20,7 +23,7 @@ const Sahajayoga = () => {
         <div className="flex flex-col items-center justify-center text-center py-8 px-4">
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl font-bold font-serif text-pink-700 uppercase m-4 px-4 leading-tight">
-            Welcome to Sahajayoga
+            {t("Welcome to Sahajayoga")}
           </h1>
 
           {/* Cards Section */}

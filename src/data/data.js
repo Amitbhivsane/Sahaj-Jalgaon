@@ -14,6 +14,7 @@ const accordionData = [
     attendence: "200",
     email1: "",
     email2: "",
+    mapLink: "https://maps.app.goo.gl/nyt2ntXJCgdwpaMz8",
   },
   {
     id: "2",
@@ -29,6 +30,7 @@ const accordionData = [
     attendence: "20",
     email1: "",
     email2: "",
+    mapLink: "https://maps.app.goo.gl/QdsU9pWXzJiCCLQ2A",
   },
   {
     id: "3",
@@ -59,12 +61,13 @@ const accordionData = [
     attendence: "30",
     email1: "",
     email2: "",
+    mapLink: "https://maps.app.goo.gl/sPqj74hZ6NiB6LBY6",
   },
   {
     id: "5",
     taluka: "Jalgaon",
     center_name: "Sahaja Yoga Meditation Center, Pimprala Jalgaon  ",
-    address: "P. Mundla School, Pimprala, Jalgaon",
+    address: "P.M. Mundla School, Pimprala, Jalgaon",
     coordinate1: "Sou. Seema Kiran Desale",
     coordinate2: "Sou. Vidya Maniklal Jadhav",
     coordinate_1_mob: "7020319764",
@@ -74,6 +77,7 @@ const accordionData = [
     attendence: "30",
     email1: "",
     email2: "",
+    mapLink: "https://maps.app.goo.gl/Fpm1WWjuXeYcPx2A9",
   },
   {
     id: "6",
@@ -110,7 +114,7 @@ const accordionData = [
   {
     id: "8",
     taluka: "Jalgaon",
-    center_name: "Sahaja Yoga Meditation Center, Ayodhya Nagar  Jalgaon  ",
+    center_name: "Sahaja Yoga Meditation Center, B N  Ayodhya Nagar  Jalgaon  ",
     address: "",
     coordinate1: "Mrs. Rina Pingale",
     coordinate2: "Mrs. Hemlata Patil",
@@ -121,6 +125,7 @@ const accordionData = [
     attendence: "80",
     email1: "",
     email2: "",
+    mapLink: "https://maps.app.goo.gl/Am1rS7szjtaRoWuB9",
   },
   {
     id: "9",
@@ -227,6 +232,7 @@ const accordionData = [
     attendence: "115",
     email1: "",
     email2: "",
+    mapLink: "https://maps.app.goo.gl/atVVqSCSEYyqoUte7",
   },
   {
     id: "16",
@@ -1112,6 +1118,22 @@ const accordionData = [
     attendence: "20",
     email1: "",
     email2: "",
+  },
+  {
+    id: "75",
+    taluka: "Jalgaon",
+    center_name: "Sahaja Dyan Mandir Tarsod Jalgaon",
+    address: "At post Tarsod Jalgaon",
+    coordinate1: "",
+    coordinate2: "",
+    coordinate_1_mob: "",
+    coordinate_2_mob: "",
+    day: "Sunday",
+    time: "10 AM",
+    attendence: "200",
+    email1: "",
+    email2: "",
+    mapLink: "https://maps.app.goo.gl/ctvoT7kGwqNzG6Za9",
   },
 ];
 
