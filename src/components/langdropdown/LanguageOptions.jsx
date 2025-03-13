@@ -1,14 +1,14 @@
 import React from "react";
 
-const LanguageOptions = (props) => {
+const LanguageOptions = ({ onChange }) => {
   return (
-    <select onChange={props.onChange} className="bg-pink-700">
-      {/* <option value="" className="font-serif font-bold">
-        Select Language
-      </option> */}
-      <option value={"en"}>English</option>
-      <option value={"ma"}>Marathi</option>
-      <option value={"hi"}>Hindi</option>
+    <select
+      onChange={onChange}
+      className="bg-pink-700 cursor-pointer text-white border border-white rounded-md p-1"
+    >
+      <option value="en">ENG</option>
+      <option value="ma">मराठी</option>
+      <option value="hi">हिन्दी</option>
     </select>
   );
 };

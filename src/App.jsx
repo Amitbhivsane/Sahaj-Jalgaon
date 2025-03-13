@@ -25,7 +25,7 @@ function App() {
           <Route path="/centers" element={<Center />} />
           <Route path="/events" element={<Events />} />
           <Route path="/download" element={<Download />} />
-          <Route path="/memories" element={<Memories />} />
+          {/* <Route path="/memories" element={<Memories />} /> */}
           <Route path="/subtle" element={<Subtle />} />
         </Routes>
       </div>

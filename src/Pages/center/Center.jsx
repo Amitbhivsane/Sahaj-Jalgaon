@@ -6,15 +6,12 @@ import { MdEmail } from "react-icons/md";
 import { BsFillPeopleFill } from "react-icons/bs";
 import shrimatajif from "../../assets/mataji/shrimatajif.png";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
+
 // Generate unique taluka and day options dynamically
 const talukaOptions = [...new Set(accordionData.map((item) => item.taluka))];
 const dayOptions = [...new Set(accordionData.map((item) => item.day))];
 
 const Center = () => {
-  const { t } = useTranslation();
-  const centers = t("centers", { returnObjects: true }); //translate object
-
   const [selectedTaluka, setSelectedTaluka] = useState("");
   const [selectedDay, setSelectedDay] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
@@ -96,7 +93,7 @@ const Center = () => {
             >
               <h2 className="text-lg font-bold text-pink-700 mb-2">
                 {/* {item.center_name} */}
-                {t(item.center_name)}
+                {item.center_name}
               </h2>
               <p className="text-gray-700 text-sm mb-2">
                 <strong className="text-cyan-600 font-bold">Address:</strong>{" "}
@@ -165,3 +162,4 @@ const Center = () => {
 };
 
 export default Center;
+//

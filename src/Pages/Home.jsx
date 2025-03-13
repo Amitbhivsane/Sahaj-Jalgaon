@@ -18,7 +18,7 @@ const Home = () => {
           )}
         </p>
         <span className="text-cyan-700 text-xl font-semibold  font-serif block mt-4">
-          H.H. Shri Mataji Nirmala Devi, 29.09.1994, Los Angeles, USA
+          {t("H.H. Shri Mataji Nirmala Devi, 29.09.1994, Los Angeles, USA")}
         </span>
 
         {/* Video Section */}
@@ -45,27 +45,11 @@ const Home = () => {
         </div>
 
         {/* Self-Realization Guide */}
-        <div className="max-w-3xl mx-auto mt-10 p-8 bg-white rounded-lg shadow-lg text-gray-800">
-          <p className="text-lg md:text-xl leading-relaxed font-serif">
-            {t("You can receive your")}{" "}
-            <span className="font-bold text-cyan-600">
-              {t("Self Realisation")}
-            </span>{" "}
+        <div className="max-w-3xl mx-auto mt-10 p-8 rounded-lg shadow-lg text-gray-800 bg-red-50">
+          <p className="text-xl  md:text-2xl text-gray-800 leading-relaxed font-serif">
             {t(
-              "(connection with your Self) while sitting in front of your computer. The only condition is your"
-            )}{" "}
-            <span className="text-cyan-600 font-bold">
-              {t("sincere desire")}
-            </span>{" "}
-            {t("to have it. During the experience, keep your")}{" "}
-            <span className="font-bold text-cyan-600">{t("left hand")}</span>{" "}
-            {t("palm upwards on your lap and place the")}{" "}
-            <span className="font-bold text-cyan-600">{t("right palm")}</span>{" "}
-            {t("on various parts of the body on your left side. Keep your")}{" "}
-            <span className="text-cyan-600 font-bold">{t("eyes closed")}</span>{" "}
-            {t("for better focus. Taking off your shoes may help, as")}{" "}
-            <span className="font-bold text-cyan-600">{t("Mother Earth")}</span>{" "}
-            {t("absorbs negativity through our feet.")}
+              "You can receive your Self Realisation (connection with your Self) while sitting in front of your computer. The only condition is your sincere desire to have it. During the experience, keep your left hand palm upwards on your lap and place the right palm on various parts of the body on your left side. Keep your eyes closed for better focus. Taking off your shoes may help, as Mother Earth absorbs negativity through our feet."
+            )}
           </p>
         </div>
       </section>

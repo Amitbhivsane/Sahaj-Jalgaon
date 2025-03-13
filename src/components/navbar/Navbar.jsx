@@ -1,23 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import loga from "../../assets/loga.png";
-// import LanguageOptions from "../langdropdown/LanguageOptions";
-// import { useTranslation } from "react-i18next";
-// import i18next from "i18next";
+import LanguageOptions from "../langdropdown/LanguageOptions";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const { t } = useTranslation();
-  // const handelClick = (e) => {
-  //   i18next.changeLanguage(e.target.value);
-  // };
+  const { t } = useTranslation();
+
+  const handleClick = (e) => {
+    i18next.changeLanguage(e.target.value);
+    setIsOpen(false); // Close mobile menu when language is selected
+  };
+
   const navLinks = [
     { name: "Shree Mataji", link: "/shree-mataji" },
     { name: "Sahaja Yoga", link: "/sahaja-yoga" },
     { name: "Centers", link: "/centers" },
     { name: "Events", link: "/events" },
     { name: "Download", link: "/download" },
-    { name: "Memories", link: "/memories" },
+    // { name: "Memories", link: "/memories" },
   ];
 
   return (
@@ -90,8 +93,8 @@ const Navbar = () => {
               </li>
             ))}
             {/* Language Dropdown Added Below "Memories" */}
-            {/* <li className="mt-2 md:mt-0 text-white ">
-              <LanguageOptions onChange={(e) => handelClick(e)} />
+            {/* <li className="mt-2 md:mt-0 text-white">
+              <LanguageOptions onChange={handleClick} />
             </li> */}
           </ul>
         </div>

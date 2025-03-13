@@ -7,7 +7,7 @@ import maa from "../../assets/mataji/maa.png";
 import tarsod3 from "../../assets/mataji/tarsod3.png";
 import { useTranslation } from "react-i18next";
 
-const images = [tarsod1, shrimatajia, shreemaa, maa, tarsod3];
+const images = [shrimatajia, shreemaa, maa];
 
 const Hero = () => {
   const { t } = useTranslation();

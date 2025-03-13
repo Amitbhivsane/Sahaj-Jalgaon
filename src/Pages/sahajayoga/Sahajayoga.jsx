@@ -30,16 +30,22 @@ const Sahajayoga = () => {
           <div className="flex flex-wrap justify-center gap-6 p-4">
             {[
               {
-                title: "Everyone Needs Meditation",
-                text: "Today all of humanity is shaken up and going through unprecedented times. Taking care of personal health has never been so crucial. Meditating every day is the key to unlocking the power within each of us.",
+                title: t("Everyone Needs Meditation"), // ✅ Correct usage of t()
+                text: t(
+                  "Today all of humanity is shaken up and going through unprecedented times. Taking care of personal health has never been so crucial. Meditating every day is the key to unlocking the power within each of us."
+                ),
               },
               {
-                title: "Sahaja Yoga is Transformational",
-                text: "Sahaja Yoga begins with an effortless experience known as Self-Realization. Anybody can do it. Practice for a few days and witness positive changes within yourself.",
+                title: t("Sahaja Yoga is Transformational"),
+                text: t(
+                  "Sahaja Yoga begins with an effortless experience known as Self-Realization. Anybody can do it. Practice for a few days and witness positive changes within yourself."
+                ),
               },
               {
-                title: "Unlock The Benefits Today",
-                text: "Once you start meditating regularly, you can reduce stress, improve memory, boost confidence, and attain higher spiritual awareness. Get started today!",
+                title: t("Unlock The Benefits Today"),
+                text: t(
+                  "Once you start meditating regularly, you can reduce stress, improve memory, boost confidence, and attain higher spiritual awareness. Get started today!"
+                ),
               },
             ].map((card, index) => (
               <div
@@ -62,23 +68,29 @@ const Sahajayoga = () => {
         <div className="flex flex-col items-center justify-center text-center bg-red-50 py-8 px-4">
           {/* Heading */}
           <h1 className="text-3xl sm:text-4xl font-bold font-serif text-pink-700 uppercase m-2">
-            Learning About Peace Within
+            {t("Learning About Peace Within")}
           </h1>
 
           {/* Cards Section */}
           <div className="flex flex-wrap justify-center gap-6 p-4">
             {[
               {
-                title: "The Kundalini",
-                text: "Your inner energy, or Kundalini, is a soothing spiritual energy that lies dormant at the base of the spine. When awakened, it rises through the central channel, clearing and activating your chakras.",
+                title: t("The Kundalini"),
+                text: t(
+                  "Your inner energy, or Kundalini, is a soothing spiritual energy that lies dormant at the base of the spine. When awakened, it rises through the central channel, clearing and activating your chakras."
+                ),
               },
               {
-                title: "Energy Channels",
-                text: "There are three main energy channels (nadis) in your body – left, center, and right. They correspond to your nervous system and connect your chakras, balancing your inner energy and well-being.",
+                title: t("Energy Channels"),
+                text: t(
+                  "There are three main energy channels (nadis) in your body – left, center, and right. They correspond to your nervous system and connect your chakras, balancing your inner energy and well-being."
+                ),
               },
               {
-                title: "Chakras",
-                text: "The Chakras (energy centers) control most aspects of our physical, mental, and spiritual lives. Difficulties in life can often be traced to imbalances in one or more chakras.",
+                title: t("Chakras"),
+                text: t(
+                  "The Chakras (energy centers) control most aspects of our physical, mental, and spiritual lives. Difficulties in life can often be traced to imbalances in one or more chakras."
+                ),
               },
             ].map((card, index) => (
               <div
@@ -101,14 +113,12 @@ const Sahajayoga = () => {
             {/* Left Section */}
             <div className="w-full md:w-1/2 bg-pink-50 p-8">
               <h1 className="text-3xl font-semibold font-serif text-pink-700 leading-tight">
-                It helps you achieve thoughtless awareness
+                {t("It helps you achieve thoughtless awareness")}
               </h1>
               <p className="mt-4 text-lg font-serif leading-relaxed text-gray-800">
-                Through Sahaja Yoga, you can achieve a state of meditation known
-                as thoughtless awareness. In this state, you experience and
-                enjoy the present moment without distractions. Your
-                consciousness works in flow with your inner energy (Kundalini),
-                bringing peace and balance.
+                {t(
+                  "Through Sahaja Yoga, you can achieve a state of meditation known as thoughtless awareness. In this state, you experience and enjoy the present moment without distractions. Your consciousness works in flow with your inner energy (Kundalini), bringing peace and balance."
+                )}
               </p>
             </div>
 
