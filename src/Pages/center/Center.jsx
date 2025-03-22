@@ -25,24 +25,26 @@ const Center = () => {
         item.center_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.address.toLowerCase().includes(searchTerm.toLowerCase()))
   );
+  const { t } = useTranslation();
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-red-50">
       <img className="w-full h-auto" src={shrimatajif} alt="Shri Mataji" />
       <div className="w-full max-w-3xl mx-auto shadow-2xl m-4 p-6 rounded-lg bg-gradient-to-r from-red-100 to-red-200">
         <h2 className="font-serif font-bold text-xl sm:text-2xl text-pink-700">
-          Jalgaon District Meditation Centers
+          {t("Jalgaon District Meditation Centers")}
         </h2>
         <p className="font-serif font-bold text-lg sm:text-xl text-cyan-600">
-          Jalgaon District has 60+ weekly meditation centers. Any seeker can
-          learn and join Sahajayoga Meditation free of cost.
+          {t(
+            "Jalgaon District has 60+ weekly meditation centers. Any seeker can learn and join Sahajayoga Meditation free of cost."
+          )}
         </p>
         <p className="font-serif font-bold text-lg sm:text-xl text-cyan-600">
-          <strong className="text-pink-700">Toll Free No:</strong>{" "}
-          <span className="text-cyan-700 text-3xl">1800 2 700 800</span>
+          <strong className="text-pink-700">{t("Toll Free No:")}</strong>{" "}
+          <span className="text-cyan-700 text-3xl">{t("1800 2 700 800")}</span>
         </p>
         <p className="font-serif font-bold text-lg sm:text-xl text-cyan-600">
-          Sahajayoga Meditation is always free. All are welcome.
+          {t("Sahajayoga Meditation is always free. All are welcome.")}
         </p>
       </div>
 

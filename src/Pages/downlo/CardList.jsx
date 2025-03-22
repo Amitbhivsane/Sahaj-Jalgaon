@@ -3,6 +3,7 @@ import Hindi from "../../assets/book/Hindi.png";
 import marathi from "../../assets/book/marathi.png";
 import med from "../../assets/book/med.png";
 import subtel from "../../assets/book/subtel.png";
+import { useTranslation } from "react-i18next";
 
 const cardData = [
   {
@@ -32,11 +33,13 @@ const cardData = [
 ];
 
 const CardList = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-wrap justify-center gap-6 p-6">
       {/* 🔴 Heading */}
       <h1 className="w-full text-center font-serif text-pink-700 text-3xl font-bold mb-5">
-        SAHAJA YOGA PDF BOOKS FOR FREE DOWNLOAD
+        {t("SAHAJA YOGA PDF BOOKS FOR FREE DOWNLOAD")}
       </h1>
 
       {cardData.map((card) => (

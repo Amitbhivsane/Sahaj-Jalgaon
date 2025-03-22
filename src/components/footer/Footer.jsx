@@ -1,7 +1,9 @@
 import React from "react";
 import loga from "../../assets/loga.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-pink-700 w-full">
       <div className="max-w-screen-xl mx-auto p-4 md:py-8">
@@ -10,17 +12,17 @@ const Footer = () => {
           <a href="/" className="flex items-center mb-4 sm:mb-0 space-x-3">
             <img src={loga} className="h-12 w-12" alt="Sahajayoga Logo" />
             <span className="text-2xl font-semibold text-white">
-              Sahajayoga Jalgaon
+              {t("SahajaYoga Jalgaon")}
             </span>
           </a>
 
           {/* Navigation Links */}
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium">
             {[
-              { name: "Shri Mataji", link: "/shree-mataji" },
-              { name: "Sahajayoga", link: "/sahaja-yoga" },
-              { name: "Centers", link: "/centers" },
-              { name: "Download", link: "/download" },
+              { name: t("Shree Mataji"), link: "/shree-mataji" },
+              { name: t("Sahaja Yoga"), link: "/sahaja-yoga" },
+              { name: t("Centers"), link: "/centers" },
+              { name: t("Download"), link: "/download" },
             ].map((item, index) => (
               <li key={index} className="w-full text-center sm:w-auto">
                 <a

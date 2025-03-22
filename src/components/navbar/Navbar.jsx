@@ -15,12 +15,12 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: "Home", link: "/" },
-    { name: "Shree Mataji", link: "/shree-mataji" },
-    { name: "Sahaja Yoga", link: "/sahaja-yoga" },
-    { name: "Centers", link: "/centers" },
+    { name: t("Home"), link: "/" },
+    { name: t("Shree Mataji"), link: "/shree-mataji" },
+    { name: t("Sahaja Yoga"), link: "/sahaja-yoga" },
+    { name: t("Centers"), link: "/centers" },
     // { name: "Events", link: "/events" },
-    { name: "Download", link: "/download" },
+    { name: t("Download"), link: "/download" },
     // { name: "Memories", link: "/memories" },
   ];
 
@@ -31,7 +31,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center space-x-3">
           <img src={loga} className="h-10 w-10" alt="Sahaja Yoga Logo" />
           <span className="text-2xl font-semibold font-serif text-white">
-            SahajaYoga Jalgaon
+            {t("SahajaYoga Jalgaon")}
           </span>
         </Link>
 
