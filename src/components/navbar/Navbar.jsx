@@ -15,10 +15,11 @@ const Navbar = () => {
   };
 
   const navLinks = [
+    { name: "Home", link: "/" },
     { name: "Shree Mataji", link: "/shree-mataji" },
     { name: "Sahaja Yoga", link: "/sahaja-yoga" },
     { name: "Centers", link: "/centers" },
-    { name: "Events", link: "/events" },
+    // { name: "Events", link: "/events" },
     { name: "Download", link: "/download" },
     // { name: "Memories", link: "/memories" },
   ];
@@ -93,9 +94,9 @@ const Navbar = () => {
               </li>
             ))}
             {/* Language Dropdown Added Below "Memories" */}
-            {/* <li className="mt-2 md:mt-0 text-white">
+            <li className="mt-2 md:mt-0 text-white">
               <LanguageOptions onChange={handleClick} />
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>

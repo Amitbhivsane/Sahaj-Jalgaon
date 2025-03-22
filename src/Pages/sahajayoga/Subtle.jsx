@@ -30,7 +30,7 @@ const Subtle = () => {
 
             <p className="ml-4 mt-10 text-base  lg:text-lg xl:text-xl">
               {t(
-                "The subtle system is the network of energy centers (chakras) and channels (nadis) along the central nervous system through which our Kundalini flows. Sahaja Yoga helps you learn to feel, understand and ultimately use your own subtle system to achieve Self-Realization. Get Self-Realization."
+                "The subtle system is the network of energy centers (chakras) and channels (nadis) along the central nervous system through which our Kundalini flows. Sahaja Yoga helps you learn to feel, understand and ultimately use your own subtle system to achieve Self-Realization."
               )}
             </p>
           </div>
@@ -47,13 +47,13 @@ const Subtle = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center bg-gray-100 mt-10">
+        {/* <div className="flex justify-center bg-gray-100 mt-10">
           <img
             src={subt2}
             alt="Sample Image"
             className="w-full max-w-lg  bg-gray-100"
           />
-        </div>
+        </div> */}
         <div className="flex flex-col ">
           <h1 className="text-3xl font-bold font-serif text-pink-700 ml-14 mt-10">
             {t("CHAKRAS")}

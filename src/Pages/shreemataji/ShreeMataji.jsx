@@ -171,7 +171,7 @@ const ShreeMataji = () => {
           </p>
 
           <h1 className="mt-4 text-3xl font-semibold font-serif text-pink-700 ">
-            {"Sahaja Yoga"}
+            {t("Sahaja Yoga")}
           </h1>
           <p className="mt-4 text-lg font-serif leading-relaxed text-gray-800">
             {t(

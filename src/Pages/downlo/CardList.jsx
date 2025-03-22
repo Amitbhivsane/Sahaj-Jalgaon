@@ -15,7 +15,7 @@ const cardData = [
     id: 2,
     image: marathi,
     title: "Sahajayoga Introduction Marathi",
-    downloadLink: "/pdfs/sahajyoga-marathi.pdf", // Add the correct PDF path
+    downloadLink: "/pdfs/sahajyoga-marathi.pdf",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const CardList = () => {
       {cardData.map((card) => (
         <div
           key={card.id}
-          className="w-60 bg-red-300  border-gray-300 rounded-lg shadow-sm "
+          className="w-60 bg-red-300 border-gray-300 rounded-lg shadow-sm transform transition duration-300 hover:scale-105"
         >
           {/* 📌 Image */}
           <img
@@ -60,7 +60,7 @@ const CardList = () => {
             {/* 📌 Download Button */}
             <a
               href={card.downloadLink} // Dynamic download link
-              download // Ensures the file is downloaded instead of opened
+              download
               className="mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-white bg-cyan-700 rounded-lg hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
             >
               Download
