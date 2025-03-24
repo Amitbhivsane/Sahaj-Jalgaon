@@ -198,7 +198,7 @@ const ShreeMataji = () => {
                 )}
               </h2>
               <p className="mt-2 text-2xl font-medium text-gray-700">
-                {t("Shri Mataji Nirmala Devi ")}
+                {t("Shri Mataji Nirmala Devi")}
               </p>
               {/* Read More Button */}
               <div className="mt-6">
