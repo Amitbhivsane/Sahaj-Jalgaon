@@ -1,15 +1,22 @@
 import React from "react";
 import loga from "../../assets/loga.png";
 import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const currentLang = i18n.language; // Get current language
+
   return (
     <footer className="bg-pink-700 w-full">
       <div className="max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           {/* Logo & Title */}
-          <a href="/" className="flex items-center mb-4 sm:mb-0 space-x-3">
+          <a
+            href={`/?lng=${currentLang}`}
+            className="flex items-center mb-4 sm:mb-0 space-x-3"
+          >
             <img src={loga} className="h-12 w-12" alt="Sahajayoga Logo" />
             <span className="text-2xl font-semibold text-white">
               {t("SahajaYoga Jalgaon")}
@@ -25,12 +32,12 @@ const Footer = () => {
               { name: t("Download"), link: "/download" },
             ].map((item, index) => (
               <li key={index} className="w-full text-center sm:w-auto">
-                <a
-                  href={item.link}
+                <Link
+                  to={`${item.link}?lng=${currentLang}`}
                   className="hover:underline text-white text-lg font-serif font-bold block sm:inline me-4 md:me-6"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
